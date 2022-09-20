@@ -2,6 +2,7 @@ baseURL = 'https://andrewaguy.github.io/'
 languageCode = 'en-gb'
 title = 'Andrew Guy'
 disableKinds = ["RSS"]
+publishDir = "docs"
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
