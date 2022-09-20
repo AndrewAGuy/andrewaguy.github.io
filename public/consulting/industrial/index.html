@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Industrial &ndash; Andrew Guy
+    </title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+    <div class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-center">
+	<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarList" aria-controls="navbarList" aria-expanded="false">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+		<div class="navbar-brand d-flex mr-auto">
+			<span class="my-auto h3">Andrew Guy</span>
+		</div>
+	</div>
+	
+	<div class="collapse navbar-collapse" id="navbarList">
+	<ul class="navbar-nav align-items-baseline">
+	
+		
+		
+		<li class="nav-item">
+			
+			<a class="nav-link " href="/">About</a>
+			
+		</li>
+		
+		<li class="nav-item">
+			
+			<div class="dropdown">
+				<a class="btn nav-link dropdown-toggle" role="button" href="#" id="dd-research" data-bs-toggle="dropdown">Research</a>
+				<div class="dropdown-menu dropdown-menu-dark dropdown-menu-end bg-dark-dd" aria-labelled-by="dd-research">
+					
+					<a class="dropdown-item " href="/research/vascularization">Vascularization</a>
+					
+					<a class="dropdown-item " href="/research/publications">Publications</a>
+					
+				</div>
+			</div>
+			
+		</li>
+		
+		<li class="nav-item">
+			
+			<a class="nav-link " href="/teaching">Teaching</a>
+			
+		</li>
+		
+		<li class="nav-item">
+			
+			<div class="dropdown">
+				<a class="btn nav-link dropdown-toggle" role="button" href="#" id="dd-consulting" data-bs-toggle="dropdown">Consulting</a>
+				<div class="dropdown-menu dropdown-menu-dark dropdown-menu-end bg-dark-dd" aria-labelled-by="dd-consulting">
+					
+					<a class="dropdown-item " href="/consulting">Overview</a>
+					
+					<a class="dropdown-item  active " href="/consulting/industrial">Industrial</a>
+					
+					<a class="dropdown-item " href="/consulting/bioengineering">Bioengineering</a>
+					
+				</div>
+			</div>
+			
+		</li>
+		
+	</ul>
+	</div>
+</nav>
+
+    
+    <div class="flex-grow-1 text-justify">
+    
+<div class="container justify-content-center prose">
+	<h1 id="industrial-applications">Industrial Applications</h1>
+<p><em>I have recently established some academic collaborations to apply my vascularization software to industrial problems &mdash; hopefully I will have some results to share soon!</em></p>
+<p><strong>Who is this for?</strong></p>
+<p>You are probably a good fit for bio-inspired distribution networks if:</p>
+<ul>
+<li>You are obsessed with maximizing the efficiency of your reactors.</li>
+<li>You are using precision manufacturing methods to create highly specialized, custom components.</li>
+</ul>
+<p><strong>You will need:</strong></p>
+<ul>
+<li>Knowledge of the microscale at which the reaction occurs: length scales, flow rates etc. or a pre-designed micro-reactor which you want to connect.</li>
+<li>The geometry of the volume you wish to serve, and an idea of how this should connect to the outside world.</li>
+</ul>
+<h3 id="reactions-in-porous-media">Reactions in Porous Media</h3>
+<p>Many processes involve the filtration of a reagent through a porous medium, which may act as a catalyst or a filter.
+As the reaction occurs on the surface of the porous material, the marginal gain of extending the thickness decreases (as reactants are used up), whilst the marginal cost of pumping the fluid through the medium remains constant (assuming Darcy flow).
+Eventually, it becomes infeasible to extend the thickness of the porous medium.</p>
+<p>Fortunately, nature has solved this problem for us: split the design into two parts!</p>
+<ul>
+<li><strong>Microscale.</strong> Where the reaction occurs: optimize this by simulation/experiments to create a unit cell.</li>
+<li><strong>Macroscale.</strong> Channel networks which distribute fluid to the microscale.
+We lose volume that could be used for reactions, but make far greater gains in the reduced power consumption required to distribute fluid into the remaining volume.</li>
+</ul>
+<p>If you can provide the details of the microscale, my software can be used to generate the distribution networks, optimized for your choice of cost.</p>
+<h3 id="distributed-reactors--heat-exchangers--mixers">Distributed Reactors / Heat Exchangers / Mixers</h3>
+<p>Some reactions cannot be scaled up due to the sheer amount of energy released, and can only be performed safely in small vessels, which may also require cooling.
+Other reactors, such as microfluidic mixers, cannot scale on their own and must be distributed throughout a target volume.</p>
+<p>My software can be used to automatically lay out arbitrary numbers of networks, enabling the compact design of distributed reaction chambers in a target volume, including disjoint networks of heat exchangers.</p>
+
+</div>
+
+    </div>
+
+    <footer class="footer bg-dark text-light">
+	<div class="container">
+		<div class="row align-items-top justify-content-between">
+			<div class="col-lg-4 col-12">
+				<p>Copyright Andrew Guy, 2022&ndash;</p>
+			</div>
+
+			<div class="col-lg-4 col-12">
+Contact:
+<ul class="list-unstyled">
+	<li> <span class="bi-envelope"></span> AndrewAGuy@proton.me </li>
+</ul>
+			</div>
+
+			<div class="col-lg-4 col-12">
+				Find me elsewhere:
+				<ul class="list-unstyled">
+					<li><a href="https://github.com/AndrewAGuy"><span class="bi-github"></span>/AndrewAGuy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+    </div>
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

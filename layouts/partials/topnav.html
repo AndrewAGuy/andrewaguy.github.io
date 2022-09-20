@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-center">
+	<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarList" aria-controls="navbarList" aria-expanded="false">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+		<div class="navbar-brand d-flex mr-auto">
+			<span class="my-auto h3">Andrew Guy</span>
+		</div>
+	</div>
+	
+	<div class="collapse navbar-collapse" id="navbarList">
+	<ul class="navbar-nav align-items-baseline">
+	
+		{{ $pageURL := path.Clean .Page.RelPermalink }}
+		{{ range .Site.Data.header.nav }}
+		<li class="nav-item">
+			{{ if .link }}
+			<a class="nav-link {{ if eq $pageURL .link }} active {{ end }}" href="{{.link}}">{{.name}}</a>
+			{{ else }}
+			<div class="dropdown">
+				<a class="btn nav-link dropdown-toggle" role="button" href="#" id="dd-{{ .name | urlize }}" data-bs-toggle="dropdown">{{.name}}</a>
+				<div class="dropdown-menu dropdown-menu-dark dropdown-menu-end bg-dark-dd" aria-labelled-by="dd-{{ .name | urlize }}">
+					{{ range .group }}
+					<a class="dropdown-item {{ if eq $pageURL .link }} active {{ end }}" href="{{.link}}">{{.name}}</a>
+					{{ end }}
+				</div>
+			</div>
+			{{ end }}
+		</li>
+		{{ end }}
+	</ul>
+	</div>
+</nav>

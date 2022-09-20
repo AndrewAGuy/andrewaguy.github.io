@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="container justify-content-center prose">
+  {{.Content}}
+
+  {{ range .Pages.GroupByDate "2006" }}
+  <h3>{{ .Key }}</h3>
+  <ul class="list-unstyled">
+    {{ range .Pages }}
+    <li>
+      <span style="width:5em;display:inline-block">{{ .Date.Format "Jan 2" }}</span>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end}}
+</div>
+{{ end }}

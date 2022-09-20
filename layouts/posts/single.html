@@ -1,0 +1,8 @@
+{{ define "main" }}
+<div class="container justify-content-center prose">
+<h1>{{.Title}}</h1>
+<p>{{time.Format "02/01/2006" .Date}}</p>
+
+{{ .Content }}
+</div>
+{{ end }}

@@ -1,0 +1,15 @@
+body {
+	font-family: sans-serif;
+	text-align: justify;
+}
+
+.prose {
+	max-width:60em;
+	display:flex;
+	flex-direction:column;
+}
+
+.prose img {
+	margin-left:auto;
+	margin-right:auto;
+}

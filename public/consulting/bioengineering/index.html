@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Bioengineering &ndash; Andrew Guy
+    </title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+    <div class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-center">
+	<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarList" aria-controls="navbarList" aria-expanded="false">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+		<div class="navbar-brand d-flex mr-auto">
+			<span class="my-auto h3">Andrew Guy</span>
+		</div>
+	</div>
+	
+	<div class="collapse navbar-collapse" id="navbarList">
+	<ul class="navbar-nav align-items-baseline">
+	
+		
+		
+		<li class="nav-item">
+			
+			<a class="nav-link " href="/">About</a>
+			
+		</li>
+		
+		<li class="nav-item">
+			
+			<div class="dropdown">
+				<a class="btn nav-link dropdown-toggle" role="button" href="#" id="dd-research" data-bs-toggle="dropdown">Research</a>
+				<div class="dropdown-menu dropdown-menu-dark dropdown-menu-end bg-dark-dd" aria-labelled-by="dd-research">
+					
+					<a class="dropdown-item " href="/research/vascularization">Vascularization</a>
+					
+					<a class="dropdown-item " href="/research/publications">Publications</a>
+					
+				</div>
+			</div>
+			
+		</li>
+		
+		<li class="nav-item">
+			
+			<a class="nav-link " href="/teaching">Teaching</a>
+			
+		</li>
+		
+		<li class="nav-item">
+			
+			<div class="dropdown">
+				<a class="btn nav-link dropdown-toggle" role="button" href="#" id="dd-consulting" data-bs-toggle="dropdown">Consulting</a>
+				<div class="dropdown-menu dropdown-menu-dark dropdown-menu-end bg-dark-dd" aria-labelled-by="dd-consulting">
+					
+					<a class="dropdown-item " href="/consulting">Overview</a>
+					
+					<a class="dropdown-item " href="/consulting/industrial">Industrial</a>
+					
+					<a class="dropdown-item  active " href="/consulting/bioengineering">Bioengineering</a>
+					
+				</div>
+			</div>
+			
+		</li>
+		
+	</ul>
+	</div>
+</nav>
+
+    
+    <div class="flex-grow-1 text-justify">
+    
+<div class="container justify-content-center prose">
+	<h1 id="bioengineering-applications">Bioengineering Applications</h1>
+<p>I am an expert in the design of vascular networks for tissue engineering: I maintain an <a href="/research/vascularization">open-source library</a> for laying out vascular networks in arbitrary domains, and have years of experience using this to design networks for different manufacturing methods.
+Services that I can provide include:</p>
+<ul>
+<li>Advice on compatibility/feasibility of manufacturing approaches (e.g. bio-ink printing, sacrificial templates + casting, photopolymerization/ablation) and cellularization strategies (e.g. casting, injection, channel-wall seeding).</li>
+<li>Design of vascular networks for a given geometry and manufacturing process, or complete design of combined perfusion chamber and vascular networks based on experimental needs.</li>
+<li>Analysis of sensitivity to manufacturing tolerances and vessel breakage.</li>
+</ul>
+<img src="https://i.postimg.cc/8ChPSr5L/3d-printable-interpenetrating-networks.png" width="75%"/>
+<h3 id="small-scale">Small-scale</h3>
+<p>You may be looking to rapidly culture large quantities of structured tissue samples for:</p>
+<ul>
+<li>Personalized medicine</li>
+<li>Toxicity screening</li>
+<li>Fundamental research</li>
+</ul>
+<p>In this case, networks can be generated to maximize either the supply efficiency (tissue volume per unit supply cost) or experimental monetary costs (a balance, depending on channel manufacturing costs and total pump running time).
+Any number of networks can be embedded, so you can create glandular structures with disjoint drainage networks: the only limit is the resolution of your manufacturing process!</p>
+<h3 id="large-scale">Large-scale</h3>
+<p>If you are a startup looking to create replacement organs or large static cultures (e.g. cultured meat that isn&rsquo;t just mince), the vascular networks will be a key component of your design.
+My software has been designed with tissue engineering in mind, and is able to account for manufacturing constraints that are not present in the biological models.
+It can be used for all kinds of workflows:</p>
+<ul>
+<li>Design any number of interpenetrating networks in arbitrary domains, with organ-specific structure enforced and the ability to insert functional structures between the terminal arterioles/venules.</li>
+<li>Start from root vessels reconstructed from scan data, then fill in the rest of the organ.</li>
+<li>Simple features, scaled up: designing small chunks to be patterned, optimizing node placements for a fixed topology, resolving inter-network collisions.</li>
+</ul>
+<p>At this scale you may need custom software tailored to your workflow, such as importing data, inspecting the output and directly interfacing to your printers.
+You&rsquo;re more than welcome to use my software to do this&mdash;it&rsquo;s free and open-source&mdash;but if you want rapid results or cannot spare the engineer hours, get in touch for a consultation.</p>
+
+</div>
+
+    </div>
+
+    <footer class="footer bg-dark text-light">
+	<div class="container">
+		<div class="row align-items-top justify-content-between">
+			<div class="col-lg-4 col-12">
+				<p>Copyright Andrew Guy, 2022&ndash;</p>
+			</div>
+
+			<div class="col-lg-4 col-12">
+Contact:
+<ul class="list-unstyled">
+	<li> <span class="bi-envelope"></span> AndrewAGuy@proton.me </li>
+</ul>
+			</div>
+
+			<div class="col-lg-4 col-12">
+				Find me elsewhere:
+				<ul class="list-unstyled">
+					<li><a href="https://github.com/AndrewAGuy"><span class="bi-github"></span>/AndrewAGuy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+    </div>
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
