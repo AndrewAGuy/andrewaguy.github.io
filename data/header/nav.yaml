@@ -4,6 +4,10 @@
   group:
     - name: Vascularization
       link: /research/vascularization
+    - name: Microfluidics
+      link: /research/microfluidics
+    - name: Imaging
+      link: /research/imaging
     - name: Publications
       link: /research/publications
 - name: Teaching
@@ -18,3 +22,5 @@
       link: /consulting/bioengineering
     - name: Vascularization
       link: /consulting/vascularization
+- name: Posts
+  link: /posts
